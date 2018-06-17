@@ -1,0 +1,91 @@
+html,
+body{
+    height: 100%;
+}
+body {
+    padding-top: 45px;
+    padding-bottom: 50px;
+
+}
+#pyg-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    height: 45px;
+    background-color: #fff;
+}
+.main-con{
+    height: 100%;
+    overflow: scroll;
+    .pyg-nav{
+        display: flex;
+        a{
+            flex: 1;
+            padding: 15px;
+        }
+    }
+    .pyg-title{
+        padding: 5px 10px;
+    }
+    .pyg-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        li{
+            width: 50%;
+            padding: 0 10px;
+            background-color: #fff;
+            border-bottom: 5px solid #efeff4;
+            &:nth-child(even){
+                border-left: 5px solid #efeff4;
+            }
+            p{
+                color: #000;
+                height: 0.43rem;
+                overflow: hidden;
+                font-size: .15rem;
+                &:nth-of-type(2){
+                    font-size: .19rem;
+                    color: red;
+                    height: 0.2rem;
+                }
+            }
+            .findSame{
+                display: flex;
+                justify-content: center;
+                a {
+                    padding: 5px 25px;
+                    border: 1px solid #974444;
+                    border-radius: 10px;
+                    font-size: 0.14rem;
+                }
+            }
+        }
+
+    }
+}
+#pyg-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    height: 50px;
+    display: flex;
+    background-color: #fff;
+   a{
+        flex: 1;
+        color: #2b2a2a;
+        text-align: center;
+        .fa{
+            font-size: 25px;
+
+        }
+        .pages-name {
+            font-size: 12px;
+        }
+    }
+
+}
